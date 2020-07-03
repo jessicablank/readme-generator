@@ -33,6 +33,21 @@ function promptUser() {
             // },
         ])
         .then(function (answers) {
-            console.log(answers)
+            renderMD(answers)
         });
+    }
+    function renderMD(data) {
+        let mdPage = `##${data.description} `
+
+
+
+
+
+    fs.writeFile("TEST.md", mdPage, function(error) {
+        if (error) {
+          console.log(error)
+          return console.log(error);
+        }
+        console.log("Success!");
+      });  
     }
