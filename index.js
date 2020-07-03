@@ -42,19 +42,22 @@ function promptUser() {
 ${data.description}
     
 ## Table of Contents:
-        * [Installation](#Installation)
+* [Installation](#Installation)
 
-        * [Instructions](#Instructions)
-        
-        * [License](#License)
-        
-        * [Contributors](#Contributors)
-        
-        * [Author](#Author)
-        
-        * [Tests](#Tests)
+* [Instructions](#Instructions)
+* [License](#License)
+* [Contributing](#Contributing)
+* [Author](#Author)
+* [Tests](#Tests)
+
 ## Installation
-    ${data.installation}`
+${data.installation}
+
+## Usage
+
+## Contributing
+
+## Tests`
 
 
 
