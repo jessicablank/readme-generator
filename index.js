@@ -21,46 +21,50 @@ function promptUser() {
                 message: "Provide installation instructions for your project:",
                 name: "installation",
             },
-            // {
-            //     type: "input",
-            //     message: "What is your github username?",
-            //     name: "github",
-            // },
-            // {
-            //     type: "input",
-            //     message: "What is your Linkedin username?",
-            //     name: "linkedin",
-            // },
+            {
+                type: "input",
+                message: "What is your first name?",
+                name: "name",
+            },
+            {
+                type: "input",
+                message: "What is your github username?",
+                name: "github",
+            },
+            {
+                type: "input",
+                message: "What is your email address?",
+                name: "email",
+            },
         ])
         .then(function (answers) {
             renderMD(answers)
         });
     }
     function renderMD(data) {
-        let mdPage = `## ${data.title} 
-    
+        let mdPage = `# ${data.title}
+## Description:  
 ${data.description}
     
 ## Table of Contents:
-* [Installation](#Installation)
+* [Installation](#installation-instructions)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 
-* [Instructions](#Instructions)
-* [License](#License)
-* [Contributing](#Contributing)
-* [Author](#Author)
-* [Tests](#Tests)
-
-## Installation
+## Installation Instructions
 ${data.installation}
 
 ## Usage
 
 ## Contributing
 
-## Tests`
+## Tests
 
-
-
+## Questions
+You can reach the author, ${data.name}, via [github](http://github.com/${data.github}) and [email](mailto:${data.email})
+`
 
     fs.writeFile("TEST.md", mdPage, function(error) {
         if (error) {

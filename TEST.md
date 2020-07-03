@@ -1,21 +1,22 @@
-## hello 
-    
-my world
+# hello
+## Description:  
+world
     
 ## Table of Contents:
-* [Installation](#Installation)
+* [Installation](#installation-instructions)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 
-* [Instructions](#Instructions)
-* [License](#License)
-* [Contributing](#Contributing)
-* [Author](#Author)
-* [Tests](#Tests)
-
-## Installation
-npm
+## Installation Instructions
+go for it
 
 ## Usage
 
 ## Contributing
 
 ## Tests
+
+## Questions
+You can reach the author, jess, via [github](http://github.com/jessicablank) and [email](mailto:jessicablankemeier@gmail.com)
