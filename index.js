@@ -16,11 +16,11 @@ function promptUser() {
                 message: "Briefly describe your project:",
                 name: "description",
             },
-            // {
-            //     type: "input",
-            //     message: "Tell us about yourself:",
-            //     name: "bio",
-            // },
+            {
+                type: "input",
+                message: "Provide installation instructions for your project:",
+                name: "installation",
+            },
             // {
             //     type: "input",
             //     message: "What is your github username?",
@@ -38,8 +38,10 @@ function promptUser() {
     }
     function renderMD(data) {
         let mdPage = `## ${data.title} 
-        -${data.description}
-        ## Table of Contents:
+    
+${data.description}
+    
+## Table of Contents:
         * [Installation](#Installation)
 
         * [Instructions](#Instructions)
@@ -51,7 +53,8 @@ function promptUser() {
         * [Author](#Author)
         
         * [Tests](#Tests)
-
+## Installation
+    ${data.installation}`
 
 
 
