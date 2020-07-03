@@ -37,7 +37,7 @@ function promptUser() {
         });
     }
     function renderMD(data) {
-        let mdPage = `##${data.description} `
+        let mdPage = `## ${data.description} `
 
 
 
