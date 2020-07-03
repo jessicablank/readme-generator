@@ -1,0 +1,20 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "A Command Line Interface Application used to develop a good README for your next GitHub project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessicablank/readme-generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jessicablank/readme-generator/issues"
+  },
+  "homepage": "https://github.com/jessicablank/readme-generator#readme"
+}
