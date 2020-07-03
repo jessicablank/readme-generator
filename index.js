@@ -8,14 +8,14 @@ function promptUser() {
         .prompt([
             {
                 type: "input",
-                message: "What is the Title of Your Project?",
+                message: "What is the title of your project?",
+                name: "title",
+            },
+            {
+                type: "input",
+                message: "Briefly describe your project:",
                 name: "description",
             },
-            // {
-            //     type: "input",
-            //     message: "Where are you from?",
-            //     name: "location",
-            // },
             // {
             //     type: "input",
             //     message: "Tell us about yourself:",
@@ -37,7 +37,20 @@ function promptUser() {
         });
     }
     function renderMD(data) {
-        let mdPage = `## ${data.description} `
+        let mdPage = `## ${data.title} 
+        -${data.description}
+        ## Table of Contents:
+        * [Installation](#Installation)
+
+        * [Instructions](#Instructions)
+        
+        * [License](#License)
+        
+        * [Contributors](#Contributors)
+        
+        * [Author](#Author)
+        
+        * [Tests](#Tests)
 
 
 
