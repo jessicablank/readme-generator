@@ -20,6 +20,7 @@ function promptUser() {
                 type: "input",
                 message: "Provide installation instructions for your project:",
                 name: "installation",
+                default: "Fork and Go! Ready to run in VS Code. "
             },
             {
                 type: "input",
@@ -37,9 +38,7 @@ function promptUser() {
                 name: "email",
             },
         ])
-        .then(function (answers) {
-            renderMD(answers)
-        });
+        .then((answers)=> renderMD(answers));
     }
     function renderMD(data) {
         let mdPage = `# ${data.title}
@@ -63,10 +62,10 @@ ${data.installation}
 ## Tests
 
 ## Questions
-You can reach the author, ${data.name}, via [github](http://github.com/${data.github}) and [email](mailto:${data.email})
+You can reach the author, ${data.name},  via [github](http://github.com/${data.github}) and [email](mailto:${data.email})
 `
 
-    fs.writeFile("TEST.md", mdPage, function(error) {
+    fs.writeFile("TEST.md", mdPage, (error)=> {
         if (error) {
           console.log(error)
           return console.log(error);

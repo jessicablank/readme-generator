@@ -1,6 +1,6 @@
-# hello
+# what is up
 ## Description:  
-world
+looking at the sun
     
 ## Table of Contents:
 * [Installation](#installation-instructions)
@@ -10,7 +10,7 @@ world
 * [Questions](#questions)
 
 ## Installation Instructions
-go for it
+Fork and Go! Ready to run in VS Code. 
 
 ## Usage
 
@@ -19,4 +19,4 @@ go for it
 ## Tests
 
 ## Questions
-You can reach the author, jess, via [github](http://github.com/jessicablank) and [email](mailto:jessicablankemeier@gmail.com)
+You can reach the author, jessica,  via [github](http://github.com/blank) and [email](mailto:blank)
