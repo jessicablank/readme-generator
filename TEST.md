@@ -1,8 +1,8 @@
-# bones
-## Description:
+# birds
+## Description:  
 ![License](https://img.shields.io/apm/l/vim-mode)
-  
-it's my dog
+
+about the sky
 
     
 ## Table of Contents:
@@ -22,4 +22,4 @@ Fork and Go! Ready to run in VS Code.
 ## Tests
 
 ## Questions
-You can reach the author, jessica,  via [github](http://github.com/jessicablank) and [email](mailto:jessicablankemeier@gmail.com)
+You can reach the author, jess,  via [github](http://github.com/jesica) and [email](mailto:jessica)

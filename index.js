@@ -12,6 +12,12 @@ function promptUser() {
                 name: "title",
             },
             {
+                type: "list",
+                message: "Select a license for your project and press 'Enter':",
+                name: "license",
+                choices: ['MIT', 'Apache', 'GPL']
+            },
+            {
                 type: "input",
                 message: "Briefly describe your project:",
                 name: "description",
