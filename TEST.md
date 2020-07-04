@@ -1,6 +1,9 @@
-# what is up
-## Description:  
-looking at the sun
+# bones
+## Description:
+![License](https://img.shields.io/apm/l/vim-mode)
+  
+it's my dog
+
     
 ## Table of Contents:
 * [Installation](#installation-instructions)
@@ -19,5 +22,4 @@ Fork and Go! Ready to run in VS Code.
 ## Tests
 
 ## Questions
-You can reach the author, jessica,  via [github](http://github.com/blank) and [email](mailto:blank)
-
+You can reach the author, jessica,  via [github](http://github.com/jessicablank) and [email](mailto:jessicablankemeier@gmail.com)

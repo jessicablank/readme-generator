@@ -43,7 +43,10 @@ function promptUser() {
     function renderMD(data) {
         let mdPage = `# ${data.title}
 ## Description:  
+![License](https://img.shields.io/apm/l/vim-mode)
+
 ${data.description}
+
     
 ## Table of Contents:
 * [Installation](#installation-instructions)
