@@ -15,7 +15,7 @@ function promptUser() {
                 type: "list",
                 message: "Select a license for your project and press 'Enter':",
                 name: "license",
-                choices: ['MIT', 'Apache', 'GPL']
+                choices: ['MIT', 'Apache', 'GNU_GPLv3']
             },
             {
                 type: "input",
@@ -49,7 +49,7 @@ function promptUser() {
     function renderMD(data) {
         let mdPage = `# ${data.title}
 ## Description:  
-![License](https://img.shields.io/apm/l/vim-mode)
+![License](https://img.shields.io/badge/license-${data.license}-brightgreen)
 
 ${data.description}
 
