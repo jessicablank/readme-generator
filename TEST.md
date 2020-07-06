@@ -1,8 +1,8 @@
-# Learning to promise
+# did i do it?
 ## Description:  
 ![License](https://img.shields.io/badge/license-MIT-brightgreen)
 
-I'm rewriting this to be asychonous. Isn't that wild>
+this is a big test
 
     
 ## Table of Contents:
@@ -22,4 +22,4 @@ Fork and Go! Ready to run in VS Code.
 ## Tests
 
 ## Questions
-You can reach the author, Jessica,  via [github](http://github.com/jessicablnk) and [email](mailto:jessicablankemeier)
+You can reach the author, bones,  via [github](http://github.com/the first doctor) and [email](mailto:star trek)
