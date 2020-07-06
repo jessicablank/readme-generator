@@ -1,8 +1,8 @@
-# j
+# Learning to promise
 ## Description:  
-![License](https://img.shields.io/badge/license-Apache-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-brightgreen)
 
-h
+I'm rewriting this to be asychonous. Isn't that wild>
 
     
 ## Table of Contents:
@@ -13,7 +13,7 @@ h
 * [Questions](#questions)
 
 ## Installation Instructions
-h
+Fork and Go! Ready to run in VS Code. 
 
 ## Usage
 
@@ -22,4 +22,4 @@ h
 ## Tests
 
 ## Questions
-You can reach the author, h,  via [github](http://github.com/h) and [email](mailto:h)
+You can reach the author, Jessica,  via [github](http://github.com/jessicablnk) and [email](mailto:jessicablankemeier)

@@ -1,57 +1,77 @@
-const inquirer = require("inquirer");
 const fs = require("fs");
+const util = require("util");
 
-promptUser();
+const inquirer = require("inquirer");
 
-function promptUser() {
-    inquirer
-        .prompt([
-            {
-                type: "input",
-                message: "What is the title of your project?",
-                name: "title",
-            },
-            {
-                type: "list",
-                message: "Select a license for your project and press 'Enter':",
-                name: "license",
-                choices: ['MIT', 'Apache', 'GNU_GPLv3']
-            },
-            {
-                type: "input",
-                message: "Briefly describe your project:",
-                name: "description",
-            },
-            {
-                type: "input",
-                message: "Provide installation instructions for your project:",
-                name: "installation",
-                default: "Fork and Go! Ready to run in VS Code. "
-            },
-            {
-                type: "input",
-                message: "What is your first name?",
-                name: "name",
-            },
-            {
-                type: "input",
-                message: "What is your github username?",
-                name: "github",
-            },
-            {
-                type: "input",
-                message: "What is your email address?",
-                name: "email",
-            },
-        ])
-        .then((answers)=> renderMD(answers));
+const writeFileAsync = util.promisify(fs.writeFile);
+
+main();
+
+
+//Run the Application
+function main() {
+    promptUser()
+        .then((answers) => {
+            const mdPage = renderMD(answers);
+            return writeFileAsync("TEST.md", mdPage);
+        }).
+        then(() => {
+            console.log("Success!");
+        })
+        .catch((error) => {
+            console.log(error);
+        });
+
     }
-    function renderMD(data) {
-        let mdPage = `# ${data.title}
+    //Returns promise for user response object. 
+    function promptUser() {
+       return inquirer.prompt([
+                {
+                    type: "input",
+                    message: "What is the title of your project?",
+                    name: "title",
+                },
+                {
+                    type: "list",
+                    message: "Select a license for your project and press 'Enter':",
+                    name: "license",
+                    choices: ['MIT', 'Apache', 'GNU_GPLv3'],
+                },
+                {
+                    type: "input",
+                    message: "Briefly describe your project:",
+                    name: "description",
+                },
+                {
+                    type: "input",
+                    message: "Provide installation instructions for your project:",
+                    name: "installation",
+                    default: "Fork and Go! Ready to run in VS Code. "
+                },
+                {
+                    type: "input",
+                    message: "What is your first name?",
+                    name: "name",
+                },
+                {
+                    type: "input",
+                    message: "What is your github username?",
+                    name: "github",
+                },
+                {
+                    type: "input",
+                    message: "What is your email address?",
+                    name: "email",
+                },
+            ])
+    }
+//Returns markdown string given user input
+    function renderMD(answers) {
+        return mdPage = `# ${answers.title}
 ## Description:  
-![License](https://img.shields.io/badge/license-${data.license}-brightgreen)
+![License](https://img.shields.io/badge/license-${answers.license}-brightgreen)
 
-${data.description}
+${answers.description}
 
     
 ## Table of Contents:
@@ -62,7 +82,7 @@ ${data.description}
 * [Questions](#questions)
 
 ## Installation Instructions
-${data.installation}
+${answers.installation}
 
 ## Usage
 
@@ -71,14 +91,7 @@ ${data.installation}
 ## Tests
 
 ## Questions
-You can reach the author, ${data.name},  via [github](http://github.com/${data.github}) and [email](mailto:${data.email})
+You can reach the author, ${answers.name},  via [github](http://github.com/${answers.github}) and [email](mailto:${answers.email})
 `
-
-    fs.writeFile("TEST.md", mdPage, (error)=> {
-        if (error) {
-          console.log(error)
-          return console.log(error);
-        }
-        console.log("Success!");
-      });  
     }
+
