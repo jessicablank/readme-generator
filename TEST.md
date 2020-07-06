@@ -1,8 +1,8 @@
-# did i do it?
+# j
 ## Description:  
-![License](https://img.shields.io/badge/license-MIT-brightgreen)
+![License](https://img.shields.io/badge/license-Apache-brightgreen)
 
-this is a big test
+j
 
     
 ## Table of Contents:
@@ -14,7 +14,7 @@ this is a big test
 * [License](#license-info)
 
 ## Installation Instructions
-Fork and Go! Ready to run in VS Code. 
+j
 
 ## Usage
 
@@ -23,9 +23,7 @@ Fork and Go! Ready to run in VS Code.
 ## Tests
 
 ## Questions
-You can reach the author, bones,  via [github](http://github.com/the first doctor) and [email](mailto:star trek)
+You can reach the author, j,  via [github](http://github.com/j) and [email](mailto:j)
 
-## License Info
-Copyright [yyyy][copyright owner]
-`
-}
+## License
+Copyright 2020 j

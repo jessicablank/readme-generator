@@ -20,6 +20,9 @@ async function main() {
     }
 
 }
+//Get the current date
+let date =  new Date().getFullYear();
+
 //Returns promise for user response object. 
 function promptUser() {
     return inquirer.prompt([
@@ -92,7 +95,7 @@ ${answers.installation}
 You can reach the author, ${answers.name},  via [github](http://github.com/${answers.github}) and [email](mailto:${answers.email})
 
 ## License
-Copyright [yyyy][copyright owner]
+Copyright ${date} ${answers.name}
 `
 }
 
