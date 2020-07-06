@@ -11,6 +11,7 @@ this is a big test
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
+* [License](#license-info)
 
 ## Installation Instructions
 Fork and Go! Ready to run in VS Code. 
@@ -23,3 +24,8 @@ Fork and Go! Ready to run in VS Code.
 
 ## Questions
 You can reach the author, bones,  via [github](http://github.com/the first doctor) and [email](mailto:star trek)
+
+## License Info
+Copyright [yyyy][copyright owner]
+`
+}

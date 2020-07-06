@@ -2,7 +2,6 @@ const fs = require("fs");
 const util = require("util");
 
 const inquirer = require("inquirer");
-const { userInfo } = require("os");
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
@@ -48,7 +47,7 @@ function promptUser() {
         },
         {
             type: "input",
-            message: "What is your first name?",
+            message: "What is your first and last name?",
             name: "name",
         },
         {
@@ -78,6 +77,7 @@ ${answers.description}
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
+* [License](#license-info)
 
 ## Installation Instructions
 ${answers.installation}
@@ -90,6 +90,9 @@ ${answers.installation}
 
 ## Questions
 You can reach the author, ${answers.name},  via [github](http://github.com/${answers.github}) and [email](mailto:${answers.email})
+
+## License
+Copyright [yyyy][copyright owner]
 `
 }
 
