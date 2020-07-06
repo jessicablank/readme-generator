@@ -1,9 +1,9 @@
-# testing answer requirements
+# Testing
 ## Description:  
 ![License](https://img.shields.io/badge/license-MIT-brightgreen)
-![GitHub](https://img.shields.io/github/followers/?label=follow&style=social)
+![GitHub](https://img.shields.io/github/followers/jessicablank?label=follow&style=social)
 
-hello hello
+woot woot
 
     
 ## Table of Contents:
@@ -15,25 +15,22 @@ hello hello
 * [License](#license-info)
 
 ## Installation Instructions
-    -LiveServer,npm init -y,npm i inquire --save,npm install axios --save
-    -LiveServer,npm init -y,npm i inquire --save,npm install axios --save
-    -LiveServer,npm init -y,npm i inquire --save,npm install axios --save
-    -LiveServer,npm init -y,npm i inquire --save,npm install axios --save
+Fork and Go! Ready to run in VS Code. 
 
 ## Usage
-Ready to run in VS Code. 
+blah blah
 
 ## Contributing
-Ready to run in VS Code. 
+Create a pull request. 
 
 ## Tests
-Ready to run in VS Code. 
+try it out!
 
 ## Questions
-You can reach the author, ,  via [github](http://github.com/) and [email](mailto:)
+You can reach the author, jessica blankemeier,  via [github](http://github.com/jessicablank) and [email](mailto:jessicablankemeier)
 
 
 ## License
-Copyright 2020 - present .
+Copyright 2020 - present jessica blankemeier.
 This project is licensed under the terms of the MIT license. 
 More information is available at [opensource.org/licenses](http:opensource.org/licenses/undefined)

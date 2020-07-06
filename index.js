@@ -54,7 +54,17 @@ function promptUser() {
             type: "input",
             message: "Explain how to use your project:",
             name: "usage",
-            default: "Ready to run in VS Code. "
+        },
+        {
+            type: "input",
+            message: "How can users contribute to this project?",
+            name: "contribution",
+            default: "Create a pull request. "
+        },
+        {
+            type: "input",
+            message: "How can users test your project?",
+            name: "test",
         },
         {
             type: "input",
@@ -109,16 +119,16 @@ ${answers.description}
 * [License](#license-info)
 
 ## Installation Instructions
-    -${answers.installation}
+${answers.installation}
 
 ## Usage
 ${answers.usage}
 
 ## Contributing
-${answers.installation}
+${answers.contribution}
 
 ## Tests
-${answers.installation}
+${answers.test}
 
 ## Questions
 You can reach the author, ${answers.name},  via [github](http://github.com/${answers.github}) and [email](mailto:${answers.email})
