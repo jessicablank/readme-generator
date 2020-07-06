@@ -12,16 +12,18 @@ main();
 async function main() {
     try {
         const answers = await promptUser();
-        const mdPage = await renderMD(answers);
+        const mdPage = renderMD(answers);
         await writeFileAsync("NEWREADME.md", mdPage);
-        console.log("Success!");
+        console.log('Success! Please copy your "NEWREADME.md" into github or save the file in your project folder as "README.md" ');
     } catch (error) {
         console.log(error);
     }
 
 }
 //Get the current year
-let date =  new Date().getFullYear();
+let date = new Date().getFullYear();
+
+
 
 //Returns promise for user response object. 
 function promptUser() {
@@ -46,6 +48,12 @@ function promptUser() {
             type: "input",
             message: "Provide installation instructions for your project:",
             name: "installation",
+            default: "Fork and Go! Ready to run in VS Code. "
+        },
+        {
+            type: "input",
+            message: "Explain how to use your project:",
+            name: "usage",
             default: "Ready to run in VS Code. "
         },
         {
@@ -65,8 +73,25 @@ function promptUser() {
         },
     ])
 }
+
+// const licenseURL = 
+
+// var licenseURL = answers.license;
+// switch (licenseURL) {
+//     case "Apache_2.0":
+//         console.log("Apache-2.0");
+//     break;
+//     case "GNU":
+//         console.log("gpl-license");
+//     break;
+//     default:
+//          "MIT";
+//     }
+//   ;
+
 //Returns markdown string given user input
 function renderMD(answers) {
+    //adjust license text for url link 
     return mdPage = `# ${answers.title}
 ## Description:  
 ![License](https://img.shields.io/badge/license-${answers.license}-brightgreen)
@@ -84,13 +109,16 @@ ${answers.description}
 * [License](#license-info)
 
 ## Installation Instructions
-${answers.installation}
+    -${answers.installation}
 
 ## Usage
+${answers.usage}
 
 ## Contributing
+${answers.installation}
 
 ## Tests
+${answers.installation}
 
 ## Questions
 You can reach the author, ${answers.name},  via [github](http://github.com/${answers.github}) and [email](mailto:${answers.email})
@@ -99,7 +127,7 @@ You can reach the author, ${answers.name},  via [github](http://github.com/${ans
 ## License
 Copyright ${date} - present ${answers.name}.
 This project is licensed under the terms of the ${answers.license} license. 
-More information is available at [opensource.org/licenses](http:opensource.org/licenses/${answers.license})
+More information is available at [opensource.org/licenses](http:opensource.org/licenses/${answers.licenseL})
 `
 }
 
