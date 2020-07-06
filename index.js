@@ -13,14 +13,14 @@ async function main() {
     try {
         const answers = await promptUser();
         const mdPage = await renderMD(answers);
-        await writeFileAsync("TEST.md", mdPage);
+        await writeFileAsync("NEWREADME.md", mdPage);
         console.log("Success!");
     } catch (error) {
         console.log(error);
     }
 
 }
-//Get the current date
+//Get the current year
 let date =  new Date().getFullYear();
 
 //Returns promise for user response object. 
@@ -35,7 +35,7 @@ function promptUser() {
             type: "list",
             message: "Select a license for your project and press 'Enter':",
             name: "license",
-            choices: ['MIT', 'Apache', 'GNU_GPLv3'],
+            choices: ['MIT', 'Apache_2.0', 'GNU'],
         },
         {
             type: "input",
@@ -46,7 +46,7 @@ function promptUser() {
             type: "input",
             message: "Provide installation instructions for your project:",
             name: "installation",
-            default: "Fork and Go! Ready to run in VS Code. "
+            default: "Ready to run in VS Code. "
         },
         {
             type: "input",
@@ -70,6 +70,7 @@ function renderMD(answers) {
     return mdPage = `# ${answers.title}
 ## Description:  
 ![License](https://img.shields.io/badge/license-${answers.license}-brightgreen)
+![GitHub](https://img.shields.io/github/followers/${answers.github}?label=follow&style=social)
 
 ${answers.description}
 
@@ -94,8 +95,13 @@ ${answers.installation}
 ## Questions
 You can reach the author, ${answers.name},  via [github](http://github.com/${answers.github}) and [email](mailto:${answers.email})
 
+
 ## License
-Copyright ${date} ${answers.name}
+Copyright ${date} - present ${answers.name}.
+This project is licensed under the terms of the ${answers.license} license. 
+More information is available at [opensource.org/licenses](http:opensource.org/licenses/${answers.license})
 `
 }
+
+
 
