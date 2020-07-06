@@ -23,8 +23,6 @@ async function main() {
 //Get the current year
 let date = new Date().getFullYear();
 
-
-
 //Returns promise for user response object. 
 function promptUser() {
     return inquirer.prompt([
@@ -83,7 +81,7 @@ function promptUser() {
         },
     ])
 }
-
+//Need help here
 // const licenseURL = 
 
 // var licenseURL = answers.license;
@@ -103,11 +101,9 @@ function promptUser() {
 function renderMD(answers) {
     //adjust license text for url link 
     return mdPage = `# ${answers.title}
-## Description:  
 ![License](https://img.shields.io/badge/license-${answers.license}-brightgreen)
-![GitHub](https://img.shields.io/github/followers/${answers.github}?label=follow&style=social)
-
-${answers.description}
+## Description:  
+ ${answers.description}
 
     
 ## Table of Contents:
@@ -132,12 +128,12 @@ ${answers.test}
 
 ## Questions
 You can reach the author, ${answers.name},  via [github](http://github.com/${answers.github}) and [email](mailto:${answers.email})
-
+![GitHub](https://img.shields.io/github/followers/${answers.github}?label=follow&style=social)
 
 ## License
 Copyright ${date} - present ${answers.name}.
 This project is licensed under the terms of the ${answers.license} license. 
-More information is available at [opensource.org/licenses](http:opensource.org/licenses/${answers.licenseL})
+More information is available at [opensource.org/licenses](http:opensource.org/licenses/${answers.license})
 `
 }
 
