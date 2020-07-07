@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-//Reminder to install node modules (npm init -y) &  inquirer(npm i inquire --save)  
+//Reminder to install node modules (npm init -y) &  inquirer(npm i inquirer --save)  
 const inquirer = require("inquirer");
 
 let licenseBadge;
