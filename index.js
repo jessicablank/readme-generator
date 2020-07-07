@@ -6,10 +6,9 @@ const inquirer = require("inquirer");
 let licenseBadge;
 let licenseURL;
 
-
 //Get the current year
 let date = new Date().getFullYear();
- 
+
 inquirer.prompt([
     {
         type: "input",
@@ -20,7 +19,7 @@ inquirer.prompt([
         type: "list",
         message: "Select a license for your project and press 'Enter':",
         name: "license",
-        choices: ["MIT", "GNU General Public version 3", "Apache_2.0",],
+        choices: ["MIT", "GNU General Public version 3", "Apache_2.0", "None"],
     },
     {
         type: "input",
@@ -77,6 +76,10 @@ inquirer.prompt([
             break;
         case "Apache_2.0":
             licenseBadge = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+            licenseURL = "https://opensource.org/licenses/Apache-2.0"
+            break;
+        case "None":
+            licenseBadge = "![License](https://img.shields.io/badge/License-none-lightgrey)";
             licenseURL = "https://opensource.org/licenses/Apache-2.0"
             break;
         default:

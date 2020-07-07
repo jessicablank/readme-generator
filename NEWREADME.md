@@ -1,5 +1,5 @@
-# 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+# testing nothing
+![License](https://img.shields.io/badge/License-none-lightgrey)
 ## Description:  
  
 
@@ -30,6 +30,6 @@ You can reach the author, ,  via [github](http://github.com/) and [email](mailto
 
 ## License
 Copyright 2020 - present .
-This project is licensed under the terms of the GNU General Public version 3 license. 
-More information is available at [opensource.org/licenses](https://www.gnu.org/licenses/gpl-3.0)
+This project is licensed under the terms of the None license. 
+More information is available at [opensource.org/licenses](https://opensource.org/licenses/Apache-2.0)
 ;
