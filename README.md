@@ -16,13 +16,31 @@
 install node modules (npm init -y) &  inquirer(npm i inquirer --save)
 
 ## Usage
+[YouTube Video Guide](https://youtu.be/9zDJlqbyBhI)
+
 Input responses into the terminal and then edit the markdown file generated as needed. Copy and paste the generated markdown into your GitHub README.md or save the file to your local project. 
 
 ## Contributing
 Create a pull request. 
 
 ## Tests
-WHEN I enter my project title THEN this is displayed as the title of the README. WHEN the user enters a description, installation instructions, usage information, contribution guidelines, and test instructions THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests. WHEN the user chooses a license for the application from a list of options THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under. WHEN the user enters a GitHub username THEN this is added to the section of the README entitled Questions, with a link to the GitHub profile.WHEN the user enters their email address THEN this is added to the section of the README entitled Questions, with instructions on how to reach the author with additional questions.WHEN the user clicks on the links in the Table of Contents THEN the user is taken to the corresponding section of the README.
+WHEN the user enters the project title THEN this is displayed as the title of the README. 
+
+WHEN the user enters a description, installation instructions, usage information, contribution guidelines, and test instructions.
+
+THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests. 
+
+WHEN the user chooses a license for the application from a list of options,
+THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under. 
+
+WHEN the user enters a GitHub username,
+THEN this is added to the section of the README entitled Questions, with a link to the GitHub profile.
+
+WHEN the user enters their email address, 
+THEN this is added to the section of the README entitled Questions, with instructions on how to reach the author with additional questions.
+
+WHEN the user clicks on the links in the Table of Contents 
+THEN the user is taken to the corresponding section of the README.
 
 ## Questions
 You can reach the author, Jessica Blankemeier,  via [github](http://github.com/jessicablank) and [email](mailto:jessicablankemeier@gmail.com)
