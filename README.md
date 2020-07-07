@@ -1,4 +1,4 @@
-# Good Readme.md Generator
+# Good README Generator
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ## Description:  
  A command line interface that prompts the user for inputs to generate a markdown file intended to create a README.md project introduction on GitHub.
@@ -19,7 +19,7 @@ install node modules (npm init -y) &  inquirer(npm i inquirer --save)
 [YouTube Video Guide](https://youtu.be/9zDJlqbyBhI)
 
 Input responses into the terminal and then edit the markdown file generated as needed. Copy and paste the generated markdown into your GitHub README.md or save the file to your local project.
- 
+
 ![ScreenShot](https://github.com/jessicablank/readme-generator/blob/master/screenshot.PNG)
 
 ## Contributing
