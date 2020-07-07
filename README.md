@@ -18,7 +18,9 @@ install node modules (npm init -y) &  inquirer(npm i inquirer --save)
 ## Usage
 [YouTube Video Guide](https://youtu.be/9zDJlqbyBhI)
 
-Input responses into the terminal and then edit the markdown file generated as needed. Copy and paste the generated markdown into your GitHub README.md or save the file to your local project. 
+Input responses into the terminal and then edit the markdown file generated as needed. Copy and paste the generated markdown into your GitHub README.md or save the file to your local project.
+ 
+![ScreenShot](https://github.com/jessicablank/readme-generator/blob/master/screenshot.PNG)
 
 ## Contributing
 Create a pull request. 
