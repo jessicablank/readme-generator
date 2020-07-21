@@ -57,11 +57,15 @@ inquirer.prompt([
         type: "input",
         message: "What is your github username?",
         name: "github",
+        //Reminder to delete if you upload to repo
+        default: "jessicablank",
     },
     {
         type: "input",
         message: "What is your email address?",
         name: "email",
+        //Reminder to delete if you upload to repo
+        default: "jessicablankemeier@gmail.com",
     },
 
 ]).then(function (answers) {
