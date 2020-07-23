@@ -1,7 +1,7 @@
 # Good README Generator
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ## Description:  
- A command line interface that prompts the user for inputs to generate a markdown file intended to create a README.md project introduction on GitHub.
+ A command line interface that prompts the user for inputs to generate a markdown file intended to create a README.md project introduction on GitHub. This application was created as part of my coding bootcamp homework and I've updated it since creating the video featured in the YouTube Guide. I use this every time I need to update a Github README. 
 
     
 ## Table of Contents:
@@ -13,7 +13,12 @@
 * [License](#license-info)
 
 ## Installation Instructions
-install node modules (npm init -y) &  inquirer(npm i inquirer --save)
+
+-npm inquirer required:
+
+`npm install`
+
+`npm i inquirer`
 
 ## Usage
 [YouTube Video Guide](https://youtu.be/9zDJlqbyBhI)

@@ -52,19 +52,21 @@ inquirer.prompt([
         type: "input",
         message: "What is your first and last name?",
         name: "name",
+        //Change defaults if you are a different author
+        default: "Jessica Blankemeier"
     },
     {
         type: "input",
         message: "What is your github username?",
         name: "github",
-        //Reminder to delete if you upload to repo
+        //Change defaults if you are a different author
         default: "jessicablank",
     },
     {
         type: "input",
         message: "What is your email address?",
         name: "email",
-        //Reminder to delete if you upload to repo
+        //Change defaults if you are a different author
         default: "jessicablankemeier@gmail.com",
     },
 
