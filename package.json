@@ -4,15 +4,18 @@
   "description": "A Command Line Interface Application used to develop a good README for your next GitHub project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run lint",
+    "start": "node index.js",
+    "lint": "eslint --quiet .",
+    "fix": "eslint --fix ."
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jessicablank/readme-generator.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Jessica Blankemeier",
+  "license": "Apache",
   "bugs": {
     "url": "https://github.com/jessicablank/readme-generator/issues"
   },

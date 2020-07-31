@@ -14,11 +14,7 @@
 
 ## Installation Instructions
 
--npm inquirer required:
-
-`npm install`
-
-`npm i inquirer`
+Be certain to run `npm install` to get the npm inquirer dependency. 
 
 ## Usage
 [YouTube Video Guide](https://youtu.be/9zDJlqbyBhI)
