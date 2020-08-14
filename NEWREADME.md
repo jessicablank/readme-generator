@@ -1,7 +1,7 @@
-# React Employee Directory
+# My Portfolio
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Description:  
- My first project in React. Utilizing 
+ This is my very first react portfolio. I enjoyed working with it so much that I know it will not be my last. 
 
     
 ## Table of Contents:
@@ -13,10 +13,10 @@
 * [License](#license-info)
 
 ## Installation Instructions
-`npm i`
+`npm i` to install depencies.
 
 ## Usage
-
+A simple portfolio for showcasing your work. 
 
 ## Contributing
 Create a pull request. 
