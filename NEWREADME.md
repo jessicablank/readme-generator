@@ -1,7 +1,7 @@
-# My Portfolio
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# j
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ## Description:  
- This is my very first react portfolio. I enjoyed working with it so much that I know it will not be my last. 
+ j
 
     
 ## Table of Contents:
@@ -13,23 +13,23 @@
 * [License](#license-info)
 
 ## Installation Instructions
-`npm i` to install depencies.
+j
 
 ## Usage
-A simple portfolio for showcasing your work. 
+j
 
 ## Contributing
-Create a pull request. 
+j
 
 ## Tests
-
+j
 
 ## Questions
-You can reach the author, Jessica Blankemeier,  via [github](http://github.com/jessicablank) and [email](mailto:jessicablankemeier@gmail.com)
-![GitHub](https://img.shields.io/github/followers/jessicablank?label=follow&style=social)
+You can reach the author, j,  via [github](http://github.com/j) and [email](mailto:j)
+![GitHub](https://img.shields.io/github/followers/j?label=follow&style=social)
 
 ## License
-Copyright 2020 - present Jessica Blankemeier.
-This project is licensed under the terms of the MIT license. 
-More information is available at [opensource.org/licenses](https://opensource.org/licenses/MIT)
+Copyright 2021 - present j.
+This project is licensed under the terms of the Apache_2.0 license. 
+More information is available at [opensource.org/licenses](https://opensource.org/licenses/Apache-2.0)
 ;
